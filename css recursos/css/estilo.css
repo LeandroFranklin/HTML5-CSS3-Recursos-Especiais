@@ -1,16 +1,69 @@
+@keyframes animacao-caixa{
+    from{
+        background: red;
+        border-radius: 0;
+    }
+    to{
+        background: green;
+        border-radius: 300px;
+    }
+}
+
+@-webkit-keyframes animacao-caixa{
+    from{
+        background: red;
+        border-radius: 0;
+    }
+    to{
+        background: green;
+        border-radius: 300px;
+    }
+}
+
+@-moz-keyframes animacao-caixa{
+    from{
+        background: red;
+        border-radius: 0;
+    }
+    to{
+        background: green;
+        border-bottom: 300px;
+    }
+}
+
+@-o-keyframes animacao-caixa{
+    from{
+        background: red;
+        border-radius: 0;
+    }
+    to{
+        background: green;
+        border-radius: 300px;
+    }
+}
+
 #caixa{
     width: 300px;
     height: 300px;
-    padding: 8px;
-    margin: 20px;
-    background: #009670;
-    box-shadow: 20px 20px 2px 20px black;
-    /* Atrás do background da div terá uma sombra */
-    /* horiontal, vertical, embassamento, espalhamento da sombra */
-}
-
-#caixa h1{
-    color: white;
-    text-shadow: 20px 20px 5px black;
-    /* horiontal, vertical, embassamento */
+    background: red;
+    animation-name: animacao-caixa;
+    -webkit-animation-name: animacao-caixa;
+    -o-animation-name: animacao-caixa;
+    -moz-animation-name: animacao-caixa;
+    animation-duration: 5s;
+    -webkit-animation-duration: 5s;
+    -o-animation-duration: 5s;
+    -moz-animation-duration: 5s;
+    animation-delay: 3s;
+    -webkit-animation-delay: 3s;
+    -o-animation-delay: 3s;
+    -moz-animation-delay: 3s;
+    animation-iteration-count: 2;
+    -webkit-animation-iteration-count: 2;
+    -o-animation-iteration-count: 2;
+    -moz-animation-iteration-count: 2;
+    animation-direction: reverse;
+    -webkit-animation-direction: reverse;
+    -o-animation-direction: reverse;
+    -moz-animation-direction: reverse;
 }
