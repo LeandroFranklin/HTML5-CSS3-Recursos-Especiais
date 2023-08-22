@@ -10,6 +10,19 @@ nav{
     padding: 10px;
 }
 
+article{
+    background: orange;
+    padding: 5px;
+}
+
+section{
+    border: 1px dotted #fff;
+}
+
+aside{
+    background: blue;
+}
+
 footer{
     background: #ccc;
 }
