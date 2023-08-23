@@ -3,31 +3,8 @@
     height: 600px;
     display: flex;
 
-    /*
-    row|row-reverse|column|column-reverse
-    */
-
-    flex-direction: row;
-
-    /*
-    nowrap|wrap|wrap-reverse
-
-    quebra de linha de itens
-    */
-
-    flex-wrap: wrap;
-
-    /*
-    flex-start|flex-end|center|space-between|space-around
-    */
     
-    justify-content: center;
-
-    /*
-    stretch|center|flex-start|flex-end|baseLine
-    */
-
-    align-items: center;
+    
 
 }
 
@@ -37,4 +14,31 @@
     margin: 10px;
     background: white;
     border: 1px solid gray;
+
+    /*Item cresce horizontalmente se tiver espaço para isso*/
+    flex-grow: 0;
 }
+
+.item1{
+    flex-grow: 1;
+}
+
+
+/*
+.ordem1{
+    order: 1;
+}
+
+.ordem2{
+    order: 2;
+}
+
+.ordem3{
+    order: 3;
+}
+
+.ordem4{
+    order: 4;
+}
+
+*/
