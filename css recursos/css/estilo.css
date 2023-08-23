@@ -9,7 +9,6 @@
 }
 
 .item{
-    width: 100px;
     height: 100px;
     margin: 10px;
     background: white;
@@ -17,11 +16,29 @@
 
     /*Item cresce horizontalmente se tiver espaço para isso*/
     flex-grow: 0;
+
+    /*Item encolhe, oposto do grow. Item que possui o shinrk maior é o que mais
+    vai encolher*/
+    flex-shrink: 1;
+
+
+    /*o basis define o tamanho inicial de cada item*/
+
+    flex-basis: 100px;
 }
 
 .item1{
-    flex-grow: 1;
+    flex-shrink: 1;
 }
+
+.item1{
+    flex-shrink: 2;
+}
+
+.item2{
+    flex-shrink: 5;
+}
+
 
 
 /*
